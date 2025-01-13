@@ -1,5 +1,5 @@
-<h3> Panduan UAS Pemweb 2024/2025 </h3>
-Contoh consume API dengan Jquery :
+<h3> Panduan UAS Pemweb 2024/2025 </h3> 
+<br />Contoh consume API dengan Jquery :
 <code>
     &lt;script&gt;
         $.ajax({
@@ -12,7 +12,7 @@ Contoh consume API dengan Jquery :
     &lt;/script&gt;
 </code>
 
-Panduan menjawab soal :
+<br /> Panduan menjawab soal :
 <ol>
     <li> Form untuk login yaitu : <code> route('auth') </code> </li>
     <li> Form untuk menambah jadwal : <code> route('event.submit') </code> </li>
