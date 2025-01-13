@@ -23,5 +23,5 @@
             <li> Form Menghapus data jadwal : <code> route('event.delete') </code> </li>
         </ul>
     </li>
-    <li> API Mengambil semua data jadwal : <code> route('event.get-json') </code> </li>
+    <li> API Mengambil semua data jadwal : <code> route('event.get-json') </code>. Gunakan variabel <code> calendar </code> yang sudah didefinisikan pada script untuk melakukan visualisasi jadwal ke dalam kalender </li>
 </ol>
