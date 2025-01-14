@@ -1,16 +1,14 @@
 <h1> Panduan UAS Pemweb 2024/2025 </h1> 
 <h3> Contoh consume API dengan Jquery : </h3>
 <code>
-    &lt;script&gt;
-        $.ajax({
-    		method: "", // GET atau POST
-    		url: "", // Isi Route
-            data: {}, // Tuliskan Atribut (Parameter) disini
-    		success: function (res) {
-    			// Proses data API disini
-    		},
-    	});
-    &lt;/script&gt;
+$.ajax({
+    method: "", // GET atau POST
+    url: "", // Isi Route
+    data: {}, // Tuliskan Atribut (Parameter) disini
+    success: function (res) {
+    	// Proses data API disini
+    },
+});
 </code>
 
 <h3> Panduan menjawab soal : </h3>
