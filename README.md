@@ -13,7 +13,12 @@ $.ajax({
 
 <h3> Panduan menjawab soal : </h3>
 <ol>
-    <li> Form untuk login yaitu : <code> route('auth') </code> </li>
+    <li> Form untuk login yaitu : <code> route('auth') </code>. Pastikan bisa login dengan contoh akun :
+        <ol>
+            <li> Email : <code>105221012@example.com</code> dan Password : <code>password</code> </li>
+            <li> Username : <code>105221012</code> dan Password : <code>password</code> </li>
+        </ol>
+    </li>
     <li> Form untuk menambah jadwal : <code> route('event.submit') </code> </li>
     <li> Pada nomor ini : 
         <ul>
