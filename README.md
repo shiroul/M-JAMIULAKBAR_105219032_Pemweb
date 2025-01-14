@@ -42,12 +42,12 @@ document.getElementById('btn-edit').addEventListener('click', function() {
 
 <h3> Menambah Event (Visualisasi Kalender) : </h3>
 <code>
-    calendar.addEvent({
-		id: 4,
-		title: "Nama Event - Nama User", // Ini Adalah Format penamaan sesuai perintah soal
-		start: "", // Gunakan Tanggal, format YYYY-MM-DD
-		end: "", // Gunakan Tanggal, format YYYY-MM-DD
-	    backgroundColor: "", // Gunakan format pewarnaan RGB atau Hex
-	});
+calendar.addEvent({
+	id: 4,
+	title: "Nama Event - Nama User", // Ini Adalah Format penamaan sesuai perintah soal
+	start: "", // Gunakan Tanggal, format YYYY-MM-DD
+	end: "", // Gunakan Tanggal, format YYYY-MM-DD
+	backgroundColor: "", // Gunakan format pewarnaan RGB atau Hex
+});
 </code>
 -------------------------------------------
