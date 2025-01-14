@@ -25,3 +25,17 @@
     </li>
     <li> API Mengambil semua data jadwal : <code> route('event.get-json') </code>. Gunakan variabel <code> calendar </code> yang sudah didefinisikan pada script untuk melakukan visualisasi jadwal ke dalam kalender </li>
 </ol>
+
+<br /> Perintah untuk trigger tombol
+
+<code>
+$('#idTombol').on('click', function() {
+    // Logika saat tombol edit diklik
+});
+</code>
+<br /> Atau
+<code>
+document.getElementById('btn-edit').addEventListener('click', function() {
+    // Logika saat tombol edit diklik
+});
+</code>
