@@ -3,8 +3,9 @@
 <code>
     &lt;script&gt;
         $.ajax({
-    		method: "GET",
+    		method: "", // GET atau POST
     		url: "", // Isi Route
+            data: {}, // Tuliskan Atribut (Parameter) disini
     		success: function (res) {
     			// Proses data API disini
     		},
@@ -26,7 +27,7 @@
     <li> API Mengambil semua data jadwal : <code> route('event.get-json') </code>. Gunakan variabel <code> calendar </code> yang sudah didefinisikan pada script untuk melakukan visualisasi jadwal ke dalam kalender </li>
 </ol>
 
-<h3> Perintah untuk trigger tombol </h3>
+<h3> Contoh Perintah untuk trigger tombol  </h3>
 <code>
 $('#idTombol').on('click', function() {
     // Logika saat tombol edit diklik
@@ -39,4 +40,14 @@ document.getElementById('btn-edit').addEventListener('click', function() {
 });
 </code>
 
+<h3> Menambah Event (Visualisasi Kalender) : </h3>
+<code>
+    calendar.addEvent({
+		id: 4,
+		title: "Nama Event - Nama User", // Ini Adalah Format penamaan sesuai perintah soal
+		start: "", // Gunakan Tanggal, format YYYY-MM-DD
+		end: "", // Gunakan Tanggal, format YYYY-MM-DD
+	    backgroundColor: "", // Gunakan format pewarnaan RGB atau Hex
+	});
+</code>
 -------------------------------------------
