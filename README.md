@@ -54,3 +54,5 @@ calendar.addEvent({
 });
 </code>
 -------------------------------------------
+
+<b> Jika Terdapat Pertanyaan, anda bisa membuat Issue di repositori ini </b>
