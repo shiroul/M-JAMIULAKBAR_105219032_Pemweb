@@ -8,7 +8,31 @@
         		</button>
       		</div>
 	      	<div class="modal-body">
-				<i> Tuliskan Inputan Form untuk tambah jadwal </i>
+				@csrf
+				<div class="form-group">
+					<label for="name">Nama Jadwal</label>
+					<input type="text" class="form-control @error('name') is-invalid @enderror" 
+						id="name" name="name" required>
+					@error('name')
+						<div class="invalid-feedback">{{ $message }}</div>
+					@enderror
+				</div>
+				<div class="form-group">
+					<label for="start">Tanggal Mulai</label>
+					<input type="date" class="form-control @error('start') is-invalid @enderror" 
+						id="start" name="start" required>
+					@error('start')
+						<div class="invalid-feedback">{{ $message }}</div>
+					@enderror
+				</div>
+				<div class="form-group">
+					<label for="end">Tanggal Selesai</label>
+					<input type="date" class="form-control @error('end') is-invalid @enderror" 
+						id="end" name="end" required>
+					@error('end')
+						<div class="invalid-feedback">{{ $message }}</div>
+					@enderror
+				</div>
 	      	</div>
 	      	<div class="modal-footer">
 	        	<button type="submit" class="btn btn-primary"> Submit </button>
