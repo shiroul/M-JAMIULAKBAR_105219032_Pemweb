@@ -12,6 +12,15 @@ class DatabaseSeeder extends Seeder {
 
         User::truncate();
 
+        // Create the specific user for login
+        User::create([
+            'username' => '105221012',
+            'name' => 'User 105221012',
+            'email' => '105221012@example.com',
+            'password' => bcrypt('password')
+        ]);
+
+        // Create additional users
         for ($i=10; $i<25; $i++) { 
 
             $nim = "1052210{$i}";

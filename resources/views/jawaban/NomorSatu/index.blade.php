@@ -1,5 +1,5 @@
 <div class="dropdown-menu dropdown-menu-right ">
-	@if (Auth::user())
+	@if (session('user'))
 		<a href="{{ route('logout') }}" class="dropdown-item"> 
 			<i class="ni ni-user-run"></i> <span>Logout</span>
 		</a>
@@ -19,9 +19,25 @@
           			<span aria-hidden="true">&times;</span>
         		</button>
       		</div>
-	      	<div class="modal-body">
-	        	<i> Tuliskan Inputan Form untuk login </i>
-	      	</div>
+			<div class="modal-body">
+			@csrf
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control @error('email') is-invalid @enderror" 
+					id="email" name="email" required>
+				@error('email')
+					<div class="invalid-feedback">{{ $message }}</div>
+				@enderror
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" class="form-control @error('password') is-invalid @enderror" 
+					id="password" name="password" required>
+				@error('password')
+					<div class="invalid-feedback">{{ $message }}</div>
+				@enderror
+			</div>
+		</div>
 	      	<div class="modal-footer">
 	        	<button type="submit" class="btn btn-primary"> Submit </button>
 	      	</div>
